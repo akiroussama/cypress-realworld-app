@@ -54,19 +54,23 @@ describe("Notre premier vrai test", () => {
     cy.hey("signin-submit").should("be.visible").click();
   });
 
-  // describe("mobile-tests", () => {
-  //   beforeEach(() => {
-  //     /*
-  //       macbook-16, macbook-15, macbook-13, macbook-11,
-  //      ipad-2, ipad-mini, iphone-xr, iphone-x, iphone-6+,
-  //       iphone-se2, iphone-8, iphone-7, iphone-6, iphone-5,
-  //        iphone-4, iphone-3, samsung-s10, samsung-note9
-  //     */
-  //     cy.viewport("iphone-5");
-  //   });
+  describe("getstarted", () => {
+    it("tests getstarted", () => {
+      cy.get("#bankaccount-bankName-input").click();
 
-  //   it(" Check the elements ", () => {
-  //     cy.hey("signup").should("be.visible").should("contain", "Don't have an account? Sign Up");
-  //   });
-  // });
+      cy.get("#bankaccount-bankName-input").type("proaccount");
+
+      cy.get("#bankaccount-routingNumber-input").type("AZER12333");
+
+      cy.get("#bankaccount-accountNumber-input").type("123123123");
+
+      cy.get("[data-test=bankaccount-submit] > span.MuiButton-label").click();
+
+      cy.get("[data-test=user-onboarding-next] > span.MuiButton-label").click();
+
+      cy.get("[data-test=sidenav-bankaccounts] > div.MuiListItemText-root > span").click();
+
+      cy.get("[data-test=sidenav-notifications] > div.MuiListItemText-root > span").click();
+    });
+  });
 });
