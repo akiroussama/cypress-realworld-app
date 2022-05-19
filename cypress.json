@@ -11,6 +11,8 @@
   "env": {
     "apiUrl": "http://localhost:3001",
     "mobileViewportWidthBreakpoint": 414,
+    "mobile": false,
+    "device": "iphone-5",
     "slowlyPlease": {
       "enabled": false,
       "delay": 1000
