@@ -76,15 +76,15 @@
       "modifiedAt": "2020-05-21T15:15:33.944Z"
     },
     {
-      "id": "n3tOSgf0H",
-      "uuid": "effbdc30-89b5-470e-91b9-fff6e8fedf7c",
-      "firstName": "akir",
-      "lastName": "oussama",
-      "username": "akir",
-      "password": "$2a$10$XyQBaWQjL8AuyhGU4IOXpOyWN7eO5KFpo7GUD5q4hQsxyUu.KANlu",
+      "id": "P9_fNSC5q",
+      "uuid": "b9c05940-a628-4548-b0cc-86ec84d5c5e2",
+      "firstName": "Bob",
+      "lastName": "Ross",
+      "username": "PainterJoy90",
+      "password": "$2a$10$mt8lANN9TwguQjCQzv.ZUuKXSKhY4IcB2PtclrVC4Cbc6z84IwBEy",
       "balance": 0,
-      "createdAt": "2022-05-19T00:16:06.231Z",
-      "modifiedAt": "2022-05-19T00:16:06.231Z"
+      "createdAt": "2022-05-19T01:30:35.597Z",
+      "modifiedAt": "2022-05-19T01:30:35.597Z"
     }
   ],
   "contacts": [
@@ -264,17 +264,6 @@
       "isDeleted": false,
       "createdAt": "2019-09-30T14:20:07.043Z",
       "modifiedAt": "2020-05-21T22:40:28.910Z"
-    },
-    {
-      "id": "83gCfgFx8",
-      "uuid": "65110297-c15d-45fb-a760-fd0afe33882b",
-      "userId": "n3tOSgf0H",
-      "bankName": "proaccount",
-      "accountNumber": "12393993939",
-      "routingNumber": "XXX192923",
-      "isDeleted": false,
-      "createdAt": "2022-05-19T00:17:19.071Z",
-      "modifiedAt": "2022-05-19T00:17:19.071Z"
     }
   ],
   "transactions": [

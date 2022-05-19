@@ -2,6 +2,7 @@
 import "@cypress/code-coverage/support";
 import "./commands";
 import { isMobile } from "./utils";
+import { slowDownCommands } from "./slow-down";
 
 beforeEach(() => {
   // cy.intercept middleware to remove 'if-none-match' headers from all requests
@@ -19,5 +20,10 @@ beforeEach(() => {
         res.setThrottle(1000);
       });
     });
+  }
+  const slowlyPlease = Cypress._.get(Cypress.env(), "slowlyPlease.enabled");
+  if (slowlyPlease) {
+    const slowlyDownDelay = Cypress._.get(Cypress.env(), "slowlyPlease.delay");
+    slowDownCommands(slowlyDownDelay);
   }
 });
