@@ -363,3 +363,7 @@ Cypress.Commands.add("loginByGoogleApi", () => {
     });
   });
 });
+
+Cypress.Commands.add("hey", (selector, ...args) => {
+  return cy.get(`[data-test*=${selector}]`, ...args);
+});
